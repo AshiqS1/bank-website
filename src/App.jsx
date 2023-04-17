@@ -7,21 +7,21 @@ function App() {
   return (
     <div className="bg-primary w-full overflow-hidden">
 
-      {/* Navbar Section */}
+      {/* Navbar Component */}
       <div className={`${styles.flexCenter} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
         </div>
       </div>
 
-      {/*  Hero Section */}
+      {/*  Hero Component */}
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
         </div>
       </div>
 
-      {/* Other Sections */}
+      {/* Other Component(s) */}
       <div className={`bg-primary ${styles.flexCenter} ${styles.paddingX}`}>
         <div className={`${styles.boxWidth}`}>
           <Stats />
@@ -31,9 +31,16 @@ function App() {
           <Testimonials />
           <Clients />
           <CTA />
+        </div>
+      </div>
+
+      {/* Footer Component */}
+      <div className={`bg-footer ${styles.flexCenter} ${styles.paddingX}`}>
+        <div className={`${styles.boxWidth}`}>
           <Footer />
         </div>
       </div>
+
     </div>
   )
 }

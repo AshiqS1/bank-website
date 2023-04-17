@@ -25,7 +25,7 @@ export const features = [
         icon: star,
         title: "Rewards",
         content:
-            "The best credit cards offer some tantalizing combinations of promotions and prizes",
+            "The best credit cards offer some tantalizing combinations of promotions and prizes.",
     },
     {
         id: "feature-2",
@@ -78,7 +78,7 @@ export const stats = [
     },
     {
         id: "stats-2",
-        title: "Trusted by Companies",
+        title: "Trusted Clients",
         value: "230+",
     },
     {

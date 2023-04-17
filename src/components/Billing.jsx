@@ -4,21 +4,17 @@ import styles, { layout } from "../styles.js";
 
 function Billing() {
     return (
-        <section id="product" className={layout.sectionReverse}>
+        <section id="product" className={`${layout.sectionReverse} gap-x-[2em]`}>
 
             {/* Left Column - Bill Image */}
-            <div className={layout.sectionImgReverse}>
+            <div className={`${layout.sectionImgReverse}`}>
                 <img className="w-[100%] h-[100%] relative z-[5] object-contain" src={bill} alt="billing" />
             </div>
 
             {/* Right Column - Section Info */}
-            <div className={layout.sectionInfo}>
-                <h2 className={styles.heading2}>Easily control your <br className="sm:block hidden" />billing & invoicing.</h2>
-                <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.</p>
-                <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
-                    <img src={apple} alt="apple_store" className="w-[128px] h-[42px] object-contain mr-5 cursor-pointer" />
-                    <img src={google} alt="google_play" className="w-[128px] h-[42px] object-contain cursor-pointer" />
-                </div>
+            <div className={`${layout.sectionInfo}`}>
+                <h2 className={`${styles.heading2}`}>Easily control your <br className="hidden ss:block md:hidden lg:block" />billing & invoicing.</h2>
+                <p className={`${styles.paragraph} mt-4 sm:mt-2 ss:max-w-[470px]`}>With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.</p>
             </div>
 
         </section>

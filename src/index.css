@@ -38,7 +38,18 @@
   box-shadow: var(--black-gradient);
 }
 
+.feedback-card:first-of-type {
+  background: var(--black-gradient);
+  box-shadow: var(--black-gradient);
+}
+
+
 .feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--black-gradient);
+}
+
+.feature-card:first-of-type {
   background: var(--black-gradient);
   box-shadow: var(--black-gradient);
 }

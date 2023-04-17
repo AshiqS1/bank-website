@@ -4,16 +4,23 @@ import styles from "../styles.js";
 
 function Stats() {
     return (
-        <section className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`}>
+        <section className={`flex flex-row flex-wrap items-center justify-center mb-4 md:mt-2 lg2:mt-0 lg:mb-6 gap-x-6 ss:justify-between md:flex-nowrap lg:gap-x-0`}>
             {stats.map((stat, idx) => (
-                <div key={stat.id} className={`flex-1 flex items-center flex-row m-3 
-                ${idx === 0 ? "justify-start" : ""} 
-                ${idx === stats.length - 1 ? "justify-end" : ""} 
-                ${(idx !== 0 && idx !== stats.length - 1) ? "justify-center" : ""}`}>
-                    <h4 className="font-poppins font-semibold xs:text-[40px] text-[30px] xs:leading-[43px] leading-[43px] text-white">{stat.value}</h4>
-                    <p className="font-poppins font-normal xs:text-[20px] text-[15px] xs:leading-[26px] leading-[21px] text-gradient uppercase ml-3">{stat.title}</p>
-                </div>
+                <>
+                    <div key={stat.id} className={`flex ss:flex-1 sm:flex-none flex-row items-center justify-center my-2 relative`}>
+                        <h4 className="font-poppins font-semibold text-white text-[30px] lg:text-[38px] leading-[40px] lg:leading-[44px]">
+                            {stat.value}
+                        </h4>
+
+                        <p className="font-poppins font-normal ml-3 text-gradient uppercase text-[15px] lg:text-[20px] leading-[21px] lg:leading-26px]">
+                            {stat.title}
+                        </p>
+                    </div>
+
+                    <div className={`w-[1px] h-[20px] bg-dimWhite hidden md:flex ${idx === stats.length - 1 ? "md:hidden" : ""}`} />
+                </>
             ))}
+
         </section>
     )
 }
