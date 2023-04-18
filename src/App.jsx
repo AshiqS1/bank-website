@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.js";
-import { Navbar, Hero, Stats, Business, Billing, CardDeal, Testimonials, Clients, CTA, Footer, Button, FeedbackCard } from "./components";
+import { Navbar, Hero, Stats, Business, Billing, CardDeal, Testimonials, Clients, CTA, Footer, ScrollTopButton } from "./components";
 
 function App() {
 
@@ -40,6 +40,9 @@ function App() {
           <Footer />
         </div>
       </div>
+
+      {/* ScrollTopButton Component */}
+      <ScrollTopButton />
 
     </div>
   )

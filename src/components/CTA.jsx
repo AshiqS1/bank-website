@@ -4,7 +4,7 @@ import styles, { layout } from "../styles.js";
 
 function CTA() {
     return (
-        <section className={`${styles.flexCenter} ${styles.padding} mt-6 mb-16 flex-col sm:flex-row bg-black-gradient-2 rounded-[20px] box-shadow`}>
+        <section className={`${styles.flexCenter} ${styles.padding} mt-6 mb-16 flex-col sm:flex-row bg-black-gradient-2 rounded-[20px] box-shadow relative z-[5]`}>
 
             {/* Heading and Text */}
             <div className="flex flex-1 flex-col">

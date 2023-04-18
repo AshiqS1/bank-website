@@ -9,6 +9,10 @@ function Billing() {
             {/* Left Column - Bill Image */}
             <div className={`${layout.sectionImgReverse}`}>
                 <img className="w-[100%] h-[100%] relative z-[5] object-contain" src={bill} alt="billing" />
+
+                {/* Gradients */}
+                <div className="absolute z-[1] -left-[50%] top-[0] w-[50%] h-[50%] rounded-full white__gradient" />
+                <div className="absolute z-[1] w-[50%] h-[50%] -left-[50%] bottom-[0] rounded-full pink__gradient" />
             </div>
 
             {/* Right Column - Section Info */}

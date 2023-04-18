@@ -33,6 +33,9 @@ function Hero() {
                     <div className="hidden ss:flex md:ml-12 md:mr-12 lg2:mr-[6em] xl:ml-0 xl:mr-[12em]">
                         <GetStarted />
                     </div>
+
+                    {/* Gradient - Title (left, optional) */}
+                    {/* <div className="absolute z-[0] -left-[50%] top-[20%] w-[50%] h-[50%] rounded-full white__gradient" /> */}
                 </div>
 
                 {/* Main Heading - Line 3 */}
@@ -51,10 +54,11 @@ function Hero() {
                 {/* Robot Image */} {/* note: may adjust img fill -> object cover/contain */}
                 <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5] object-contain" />
 
-                {/* Gradients */}
-                <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-                <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient" />
-                <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+                {/* Gradients - Image (right) */}
+                <div className="absolute z-[0] w-[50%] h-[50%] right-[5rem] bottom-[5rem] blue__gradient" />
+                <div className="absolute z-[0] w-[60%] h-[60%] rounded-full bottom-[10rem] white__gradient" />
+                <div className="absolute z-[1] w-[40%] h-[35%] top-[0rem] pink__gradient" />
+
             </div>
 
             <div className={`${styles.flexCenter} ss:hidden py-4`}>
